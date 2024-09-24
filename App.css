@@ -1,0 +1,117 @@
+
+  :root{
+    background-color: rgb(252, 254, 255);
+    user-select: none;
+  }
+
+  .home {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .filter-container,
+  .sort-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .product-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  
+  .product-card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border: none ;
+    border-radius: 10px;
+    background-color: rgba(138, 179, 215, 0.714);
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0px 1px 5px #959595;
+    transition: all .3s ease-in-out;
+  }
+  .product-card:hover{
+    transform: translate(0px, -5px);
+  }
+
+  .product-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .product-price{
+    color: green;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .product-category {
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .3s ;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .product-category:active{
+    opacity: .5;
+  }
+
+  .product-category:hover{
+    color: blue;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  .sort-container select, .filter-container > select{
+    background-color: rgba(140, 168, 193, 0.607);
+    box-shadow: 0px 0px 5px gray;
+    border: none;
+    border-radius: 3px ;
+    font-size: 100%;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 7px 15px;
+  }
+  select:hover{
+    background-color: rgb(140, 168, 193);
+  }
+   
+  .sort-container > button{
+    padding: 5px 10px;
+    margin-left: 10px ;
+    background-color: rgba(140, 168, 193, 0.607);
+    box-shadow: 0px 0px 5px gray;
+    border: none;
+    border-radius: 3px ;
+    font-size: 100%;
+    cursor: pointer;
+    transition: all .3s ;
+  }
+  button:hover{
+    background-color: rgb(140, 168, 193);
+  }
+
+  .clear-filters{
+    transition: all .3s;
+  }
+  .clear-filters:hover{
+    color: rgb(247, 83, 83)
+  }
+  .clear-filters:active{
+    color: rgb(179, 8, 8)
+  }
+  
